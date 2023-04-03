@@ -1,0 +1,163 @@
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 0.3rem;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+ 
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 5rem;
+  flex-direction: column;
+  align-items: center;
+  top: -45px;
+}
+.header-list img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+.header-list {
+  text-align: center;
+  align-items: baseline;
+ font-family: fantasy;  
+}
+img {
+    width: 200%;
+    height: auto;
+    padding: 30px;
+    align-items: center;
+}
+
+
+  #imagen img:not(:first-child) {
+    display: none;
+  }
+  .articulos {
+    position: relative;
+    height: 400px;
+  }
+
+
+
+ main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       align-items: center;
+       height: 100vh;
+    }
+    .contenido2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .articulos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .secciones2 img {
+      display: block;
+      margin: 0 auto;
+
+    }
+    
+    .secciones2 p {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+    #contenedor {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+    }
+    #imagen {
+      width: 100%;
+      text-align: center;
+    }
+    
+    #peque1 {
+      width: 200px;
+      height: 200px;
+      transition: opacity 1s ease-in-out;
+    }
+    
+    #peque1.oculto {
+      opacity: 0;
+    }
+    
+    #peque2 {
+      width: 200px;
+      height: 200px;
+    }
+    
+    
+    .boton {
+      margin-top: 20px;
+    }
+    .boton button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-image: linear-gradient(to right, #fff, #aba8a8);
+  color: #000;
+      border: none;
+      cursor: pointer;
+      border-radius: 50px;
+    }
+    .boton button a {
+     color: #333;
+    }
+    .boton button:hover {
+      opacity: 0.8;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+  }
+  
+  body {
+    overflow: hidden;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

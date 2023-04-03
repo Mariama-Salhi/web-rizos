@@ -1,0 +1,214 @@
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 0.3rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+ 
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 5rem;
+  flex-direction: column;
+  align-items: center;
+  top: -45px;
+}
+.header-list img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+.header-list {
+  font-family: fantasy; 
+}
+.logo {
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+main {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 100vh;
+}
+.grid-layout {
+  width: 100%;
+  margin: auto ;
+  padding: 20px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% ;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+img {
+  width: 100%;
+}
+.caja {
+  width: 200px;
+  height: 200px;
+  border: 4px solid black;
+  background-color: rgb(190, 194, 198);
+  margin: 5px;
+  text-align: center;
+  list-style: 150px;
+  
+}
+.TYPE-2-WAVY,
+.TYPE-3-CURLY,
+.TYPE-4-KINKY-AND-COILY {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TYPE-2-WAVY img,
+.TYPE-3-CURLY img,
+.TYPE-4-KINKY-AND-COILY img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.type-text {
+  writing-mode: vertical-lr;
+}
+
+
+
+
+
+footer {
+  position: absolute;
+  width: 1230px;
+  height: 200px;
+  left: 0px;
+  top: 1000px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f5f5f5, #2b2b2b);
+  clear: both;
+  width: 100%;
+  background-color: #333;
+  padding: 0.3rem;
+  margin-top: -180px;
+}
+
+.derecha h3 {
+  position: absolute;
+  width: 454px;
+  height: 421px;
+  left: 900px;
+  top: 10px;
+}
+
+.derecha p {
+  position: absolute;
+  width: 100px;
+  height: 401px;
+  left: 900px;
+  top: 50px;
+}
+
+.email-box {
+  position: absolute;
+  width: 300px;
+  height: 441px;
+  left: 900px;
+  top: 130px;
+}
+
+.email-box input {
+  width: 70%;
+  border-bottom: dimgray;
+  outline: auto;
+}
+
+.boton-redondo {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 900px;
+  top: 160px;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60px;
+  margin-left: -80px;
+}
+
+.redes-sociales a {
+  display: flex;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociales a:hover {
+  background-color: #333;
+  color: #fff;
+
+}
+
+
+@media (max-width: 768px) {
+  header {
+    height: 100px;
+  }
+  
+  nav ul li a {
+    padding: 1rem;
+    top: -95px;
+  }
+  grid-layout {
+    width: 100%;
+    margin: auto ;
+    height: auto;
+  }
+  footer {
+  margin-top: -30px;
+  }
+}

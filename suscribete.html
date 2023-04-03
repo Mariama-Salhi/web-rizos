@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>unike</title>
+  <link rel="stylesheet" href="suscribete.css">
+</head>
+<header>
+  <nav>
+    <ul class="header-list">
+      <a href="principal.html"></a>
+      <li><a href="rizos.html">Rizos </a></li>
+      <li><a href="consejos.html">Consejos </a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="peluquerias.html">Peluquerias</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+<main>
+
+
+
+
+
+
+<div class="contenido2">
+  <div class="articulos">
+    <div class="secciones2">
+      <div id="imagen">
+        <img id="peque1" src="imagenes afro/no.png" alt="peque con dificultad de peinarse">
+        <img id="peque1" src="imagenes afro/si.png" alt="peque con dificultad de peinarse">
+      </div>
+      <p>Gracias, tu suscripcion se ha realzado correctamente </p>
+    </div>
+    <div class="boton">
+      <button><a href="principal.html">Aceptar</a></button>
+    </div>
+  </div>
+</div>
+<style>
+  #imagen img:not(:first-child) {
+    display: none;
+  }
+  #imagen {
+    margin-bottom: 20px;
+    
+  }
+  .articulos {
+    position: relative;
+    height: 600px;
+  }
+</style>
+<script>
+let currentImageIndex = 0;
+const images = document.querySelectorAll("#imagen img");
+
+setInterval(() => {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+
+  images[currentImageIndex].style.opacity = 0;
+  images[currentImageIndex].style.display = "block";
+
+  setTimeout(() => {
+    images[currentImageIndex].style.opacity = 1;
+  }, 100);
+
+  setTimeout(() => {
+    images.forEach((img) => {
+      if (img !== images[currentImageIndex]) {
+        img.style.display = "none";
+      }
+    });
+  }, 300);
+}, 3000);
+</script>
+
+
+
+
+
+
+
+
+</main>
+</body>
+</html>
+
+
+
+
+
