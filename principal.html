@@ -6,12 +6,10 @@
   <title>unike</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="principal.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/wavesurfer.js"></script>
 </head>
 <header>
-  <head>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  
   <nav>
     <ul class="header-list">
       <li><a href="rizos.html">Rizos </a></li>
@@ -22,7 +20,7 @@
   </nav>
 </header>
 <body>
-
+  
   <main>
     <div class="titulo-pagina">
       <h1>u<br><br>n<br><br>i<br><br>k<br><br>e</h1>
@@ -30,11 +28,45 @@
     <div>
     <img src="imagenes afro/portada.jpg">
     </div>
+    
   </main>
+  <div class="music">
+    <p>Chill & Vibes</p>
+    <h1>Curl your World</h1>
+    <div class="track">
+      <img src="imagenes afro/play.png"  id="playBtn" alt="play icon">
+      <div id="waveform"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+  var playBtn = document.getElementById("playBtn");
+  var wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: 'grey',
+        progressColor: 'black',
+        barWidth: 4,
+        responsive: true,
+        height: 90,
+        barRadius: 20
+});
+wavesurfer.load('mp3-rizos/chill.mp3');
 
+playBtn.onclick = function() {
+  wavesurfer.playPause();
+  if(playBtn.src.includes("imagenes afro/play.png")){
+    playBtn.src = "imagenes afro/pause.png";
+}else{
+  playBtn.src = "imagenes afro/play.png";
+}
+}
 
+wavesurfer.on('finish' , function(){
+  "imagenes afro/play.png";
+  wavesurfer.stop();
+})
 
-
+</script>
 
   <footer>
     <div class="izquierda">
@@ -49,14 +81,14 @@
             <input type="email" placeholder="Email">
         </div>
         <button class="boton-redondo" onclick="window.location.href='suscribete.html'">suscribete</button>
-
       </div>
       <div class="redes-sociales">
         <a href="https://www.instagram.com/miss_rizos/" class="icono-instagram"><i class="bi bi-instagram"></i></a>
         <a href="https://www.facebook.com/Miss-Rizos-235632179794319" class="icono-facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://www.youtube.com/@lamissrizos" class="icono-youtube"><i class="bi bi-youtube"></i></a>
-  
-      </div>
+
   </footer>
 </body>
 </html>
+
+
