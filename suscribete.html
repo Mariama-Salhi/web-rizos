@@ -19,18 +19,11 @@
 </header>
 <body>
 <main>
-
-
-
-
-
-
 <div class="contenido2">
   <div class="articulos">
     <div class="secciones2">
       <div id="imagen">
-        <img id="peque1" src="imagenes afro/no.png" alt="peque con dificultad de peinarse">
-        <img id="peque1" src="imagenes afro/si.png" alt="peque con dificultad de peinarse">
+        <img src="imagenes afro/suscribirte2.png" alt="dos cuerpos desnudos sobre un peine">
       </div>
       <p>Gracias, tu suscripcion se ha realzado correctamente </p>
     </div>
@@ -39,49 +32,6 @@
     </div>
   </div>
 </div>
-<style>
-  #imagen img:not(:first-child) {
-    display: none;
-  }
-  #imagen {
-    margin-bottom: 20px;
-    
-  }
-  .articulos {
-    position: relative;
-    height: 600px;
-  }
-</style>
-<script>
-let currentImageIndex = 0;
-const images = document.querySelectorAll("#imagen img");
-
-setInterval(() => {
-  currentImageIndex = (currentImageIndex + 1) % images.length;
-
-  images[currentImageIndex].style.opacity = 0;
-  images[currentImageIndex].style.display = "block";
-
-  setTimeout(() => {
-    images[currentImageIndex].style.opacity = 1;
-  }, 100);
-
-  setTimeout(() => {
-    images.forEach((img) => {
-      if (img !== images[currentImageIndex]) {
-        img.style.display = "none";
-      }
-    });
-  }, 300);
-}, 3000);
-</script>
-
-
-
-
-
-
-
 
 </main>
 </body>
